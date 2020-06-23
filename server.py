@@ -59,7 +59,7 @@ def submited_form():
     if request.method == 'POST':
         data = request.form.to_dict()
         write_to_csv(data)
-        conection(data)
+#         conection(data)
         # print(data)
         return redirect('/thankyou.html')
     else:
